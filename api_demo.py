@@ -5,7 +5,16 @@ import logging
 import requests
 
 
-def status_code_20x(status_code):
+def status_code_20x(status_code: int) -> bool:
+    """
+    Check if the status code is in the 20x range.
+
+    Args:
+        status_code (int): The status code to check.
+
+    Returns:
+        bool: True if the status code is in the 20x range, False otherwise.
+    """
     return 200 <= status_code < 300
 
 
