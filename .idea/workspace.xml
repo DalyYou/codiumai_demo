@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79254bcd-f8ea-4127-a988-b7fbfcd41b96" name="Changes" comment="add doc">
+    <list default="true" id="79254bcd-f8ea-4127-a988-b7fbfcd41b96" name="Changes" comment="Refactor API request functions into APIClient class and add login functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_demo_origin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_demo_origin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_api_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui_demo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +29,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.api_demo.executor": "Run",
+    "Python.ui_demo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/001Automation/tools/codiumai/codiumai_demo",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -43,7 +42,7 @@
       <recent name="D:\001Automation\tools\codiumai\codiumai_demo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.ui_demo">
     <configuration name="api_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codiumai_demo" />
       <option name="ENV_FILES" value="" />
@@ -66,8 +65,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ui_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codiumai_demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ui_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ui_demo" />
         <item itemvalue="Python.api_demo" />
       </list>
     </recent_temporary>
@@ -112,12 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705999426192</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor API request functions into APIClient class and add login functionality">
+      <option name="closed" value="true" />
+      <created>1706001228879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706001228879</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="add doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add doc" />
+    <MESSAGE value="Refactor API request functions into APIClient class and add login functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor API request functions into APIClient class and add login functionality" />
   </component>
 </project>
