@@ -113,5 +113,20 @@ def api_login(user, password):
     return api_client.api_request(LOGIN_PATH, method='POST', data=data)
 
 
+class AddItem:
+    path = '/items'
+
+    def api_login(self, user, password):
+        data = {
+            'grant_type': 'password',
+            'username': user,
+            'password': password
+        }
+        return api_client.api_request(LOGIN_PATH, method='POST', data=data)
+
+    def add_item(self, body):
+        return api_client.api_request(LOGIN_PATH, method='POST', payload=body)
+
+
 aa = api_login('user1', 'secret1')
 print(aa)

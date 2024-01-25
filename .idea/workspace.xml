@@ -4,21 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79254bcd-f8ea-4127-a988-b7fbfcd41b96" name="Changes" comment="Refactor API request functions into APIClient class and add login functionality">
+    <list default="true" id="79254bcd-f8ea-4127-a988-b7fbfcd41b96" name="Changes" comment="Add PlayClient and LoginPage classes to ui_demo.py for user login functionality">
+      <change afterPath="$PROJECT_DIR$/api_demo_origin_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_demo_origin_1_bak.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_demo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2bLeVOPmJVNEGCFjIBU9QlPQjOb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -28,13 +38,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_demo1.py.executor": "Run",
     "Python.api_demo.executor": "Run",
+    "Python.api_demo_origin-1.executor": "Run",
+    "Python.demo1.executor": "Run",
     "Python.ui_demo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/001Automation/tools/codiumai/codiumai_demo",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "settings.editor.selected.configurable": "ai.codium.settings.CodiumSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -42,7 +55,7 @@
       <recent name="D:\001Automation\tools\codiumai\codiumai_demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ui_demo">
+  <component name="RunManager" selected="Python.demo1">
     <configuration name="api_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codiumai_demo" />
       <option name="ENV_FILES" value="" />
@@ -57,6 +70,50 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="api_demo_origin_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codiumai_demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\001Automation\tools\codiumai\codiumai_demo\api_demo_origin_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codiumai_demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -87,10 +144,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in demo1.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="codiumai_demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/demo1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ui_demo" />
+        <item itemvalue="Python.demo1" />
+        <item itemvalue="Python tests.Python tests in demo1.py" />
+        <item itemvalue="Python.api_demo_origin_1" />
         <item itemvalue="Python.api_demo" />
+        <item itemvalue="Python.ui_demo" />
       </list>
     </recent_temporary>
   </component>
@@ -142,13 +217,22 @@
       <option name="project" value="LOCAL" />
       <updated>1706001228879</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add PlayClient and LoginPage classes to ui_demo.py for user login functionality">
+      <option name="closed" value="true" />
+      <created>1706005384826</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706005384826</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="add doc" />
     <MESSAGE value="Refactor API request functions into APIClient class and add login functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor API request functions into APIClient class and add login functionality" />
+    <MESSAGE value="Add PlayClient and LoginPage classes to ui_demo.py for user login functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add PlayClient and LoginPage classes to ui_demo.py for user login functionality" />
   </component>
 </project>
